@@ -18,7 +18,7 @@
 
 .title {
   font-size: clamp(1.4rem, 3vw, 2rem);
-  line-height: 1;
+  line-height: 1.45;
   font-weight: 500;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -26,6 +26,8 @@
 }
 
 .desc {
+  line-height: 1.45;
+  font-size: 18px;
   color: var(--color-gray);
 }
 

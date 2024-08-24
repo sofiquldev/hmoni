@@ -4,13 +4,23 @@
 
 
 // Define a single map with values for light and dark themes
-$colors: (
+/* $colors: (
   "foreground-color": (#000000, #ffffff),
   "background-color": (#ffffff, #000000),
   "color-gray"      : (#828282, #828282),
+  "border-color"    : (#e0e0e0, #3f3d56),
+  "primary-color"   : (#2f80ed, #2f80ed),
+  "primary-color-h" : (#3f3d56, #3f3d56),
+  "input-background": (#ffffff, #3f3d56)
+); */
+$colors: (
+  "foreground-color": (#000000, #000000),
+  "background-color": (#ffffff, #ffffff),
+  "color-gray"      : (#828282, #828282),
   "border-color"    : (#e0e0e0, #e0e0e0),
   "primary-color"   : (#2f80ed, #2f80ed),
-  "primary-color-h" : (#3f3d56, #3f3d56)
+  "primary-color-h" : (#3f3d56, #3f3d56),
+  "input-background": (#ffffff, #ffffff)
 );
 
 
