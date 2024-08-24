@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// Define a single map with values for light and dark themes
+$colors: (
+  "foreground-color": (#000000, #ffffff),
+  "background-color": (#ffffff, #000000),
+  "color-gray"      : (#828282, #828282),
+  "border-color"    : (#e0e0e0, #e0e0e0),
+  "primary-color"   : (#2f80ed, #2f80ed),
+  "primary-color-h" : (#3f3d56, #3f3d56)
+);
+
+
+// Mixin to apply CSS variables based on the theme
+@mixin apply-color-map($theme) {
+  @each $key, $values in $colors {
+    --#{$key}: #{nth($values, $theme)};
+  }
+}
+
+
+:root {
+  @include apply-color-map(1); // Light theme
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include apply-color-map(2); // Dark theme
+  }
+}
+
+
+
+body {
+  color: var(--foreground-color);
+  background: var(--background-color);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
