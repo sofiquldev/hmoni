@@ -5,6 +5,6 @@
   "/api/unsubscribe/route": "app/api/unsubscribe/route.js",
   "/coming-soon/page": "app/coming-soon/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js"
+  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
+  "/page": "app/page.js"
 }
