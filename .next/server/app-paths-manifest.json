@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/author/route": "app/api/author/route.js",
+  "/api/subscribe/route": "app/api/subscribe/route.js",
+  "/api/unsubscribe/route": "app/api/unsubscribe/route.js",
+  "/coming-soon/page": "app/coming-soon/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js"
+}
