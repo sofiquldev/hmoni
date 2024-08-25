@@ -72,7 +72,7 @@
     &:nth-child(9) {
       bottom: 27.54%;
       right: 13.33%;
-      animation: move 5s infinite linear;
+      animation: move 5s infinite alternate linear;
     }
     
     &:nth-child(10) {
