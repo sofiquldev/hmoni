@@ -10,18 +10,18 @@ export default function ComingSoon() {
   return (
     <>
       <ParallaxBG page="coming-soon" />
-      <div className="container mx-auto text-center max-w-screen-md pt-6 md:py-12 md:pb-8 px-4 coming-soon">
+      <div className={`container mx-auto text-center max-w-screen-md pt-6 md:py-12 md:pb-8 px-4 ${styles.page_wrapper}`}>
         <header>
           <Link href="#" className={styles.brand}>
             <img src="/logo.svg" alt="h-moni-logo" />
           </Link>
         </header>
 
-        <main>
+        <main className={ styles.mainContent }>
           <h1 className={styles.title}>We are Coming Soon!!</h1>
           <p className={styles.desc}>Stay tuned for something amazing</p>
 
-          <img className={styles.mainImage} src="/coming-soon.svg" />
+          <img className={styles.mainImage} src="/coming-soon.svg" alt="coming-soon" />
         </main>
 
         <footer>

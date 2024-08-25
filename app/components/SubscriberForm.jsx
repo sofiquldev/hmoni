@@ -34,7 +34,7 @@ const SubscriberForm = () => {
     }
   };
 
-  // Effect to clear the message after 5 seconds
+  // clear the message after 5 seconds
   useEffect(() => {
     if (message) {
       const timer = setTimeout(() => setMessage(''), 5000);

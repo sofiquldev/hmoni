@@ -16,9 +16,9 @@
 $colors: (
   "foreground-color": (#000000, #000000),
   "background-color": (#ffffff, #ffffff),
-  "color-gray"      : (#828282, #828282),
-  "border-color"    : (#e0e0e0, #e0e0e0),
-  "primary-color"   : (#2f80ed, #2f80ed),
+  "color-gray" : (#828282, #828282),
+  "border-color" : (#e0e0e0, #e0e0e0),
+  "primary-color" : (#2f80ed, #2f80ed),
   "primary-color-h" : (#3f3d56, #3f3d56),
   "input-background": (#ffffff, #ffffff)
 );
@@ -47,6 +47,10 @@ $colors: (
 body {
   color: var(--foreground-color);
   background: var(--background-color);
+
+  @media (orientation: landscape) {
+    min-height: 100vh;
+  }
 }
 
 @layer utilities {
