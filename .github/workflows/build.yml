@@ -26,6 +26,8 @@ jobs:
     - run: npm run build --if-present
     - run: git checkout --orphan build
     - run: |
+          git config --global user.email "sofiquldev@gmail.com"
+          git config --global user.name "sofiquldev"
           git checkout --orphan build
           git rm -rf .
           cp -r .next/*
