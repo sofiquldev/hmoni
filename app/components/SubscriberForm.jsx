@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
+
 import styles from './styles/subscriber-form.module.scss';
 
 const SubscriberForm = () => {

@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-import styles from "./styles.module.scss";
-import SubscriberForm from "../components/SubscriberForm";
-import SocialLinks from "../components/SocialLinks";
+import Image from "next/image";
+import SubscriberForm from "@/app/components/SubscriberForm";
+import SocialLinks from "@/app/components/SocialLinks";
 import Copyright from "@/app/components/Copyright";
-import ParallaxBG from "../components/ParallaxBG";
+import ParallaxBG from "@/app/components/ParallaxBG";
+
+import styles from "./styles.module.scss";
 
 export default function ComingSoon() {
   return (
@@ -13,7 +15,7 @@ export default function ComingSoon() {
       <div className={`container mx-auto text-center max-w-screen-md pt-6 md:py-12 md:pb-8 px-4 ${styles.page_wrapper}`}>
         <header>
           <Link href="#" className={styles.brand}>
-            <img src="/logo.svg" alt="h-moni-logo" />
+            <Image src="/logo.svg" alt="h-moni-logo" />
           </Link>
         </header>
 
@@ -21,7 +23,7 @@ export default function ComingSoon() {
           <h1 className={styles.title}>We are Coming Soon!!</h1>
           <p className={styles.desc}>Stay tuned for something amazing</p>
 
-          <img className={styles.mainImage} src="/coming-soon.svg" alt="coming-soon" />
+          <Image className={styles.mainImage} src="/coming-soon.svg" alt="coming-soon" />
         </main>
 
         <footer>

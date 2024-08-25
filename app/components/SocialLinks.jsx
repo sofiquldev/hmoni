@@ -1,6 +1,8 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+
 import styles from "./styles/social-links.module.scss";
 
 const SocialLinks = () => {
@@ -21,7 +23,7 @@ const SocialLinks = () => {
       {items.map((item, index) => (
         <li key={ index }>
           <Link href={item.href} target="_blank">
-            <img src={`/socials/${item.name}.svg`} alt={item.name} />
+            <Image src={`/socials/${item.name}.svg`} alt={item.name} />
           </Link>
         </li>
       ))}
