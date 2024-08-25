@@ -4,8 +4,8 @@ import "./globals.scss";
 const jost = Jost({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "H Moni",
-  description: "UI/IX Desinger",
+  title: "UI Firm",
+  description: "We are Coming Soon!!",
 };
 
 export default function RootLayout({ children }) {

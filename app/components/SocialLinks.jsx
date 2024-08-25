@@ -23,7 +23,7 @@ const SocialLinks = () => {
       {items.map((item, index) => (
         <li key={ index }>
           <Link href={item.href} target="_blank">
-            <Image src={`/socials/${item.name}.svg`} alt={item.name} />
+            <Image src={`/socials/${item.name}.svg`} alt={item.name} width={20} height={20} />
           </Link>
         </li>
       ))}

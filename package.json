@@ -1,6 +1,11 @@
 {
   "name": "hmoni",
   "version": "0.1.0",
+  "author": {
+    "name": "Sofiqul Islam",
+    "email": "sofiquldev@gmail.com",
+    "url": "https://sofiqul.dev"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
