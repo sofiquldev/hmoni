@@ -25,11 +25,11 @@ jobs:
     - run: npm run build --if-present
     - name: Prepare Deployment
       run: |
-        mkdir -p public
-        cp -r .next static public/
+        mkdir -p build
+        cp -r .next public build/
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: ./build
         publish_branch: build
