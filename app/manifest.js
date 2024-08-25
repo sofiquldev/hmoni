@@ -1,8 +1,7 @@
 export default function manifest() {
   return {
-    short_name: "H Moni",
-    name: "H Moni - UI/IX Designer",
-    description: "An application built with Next.js",
+    short_name: "UI Firm",
+    name: "UI Firm",
     icons: [
       {
         src: "/favicon-192x192.png",
